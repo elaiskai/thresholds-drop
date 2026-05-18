@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="111mm" height="154mm" viewBox="0 0 111 154">
+
+<defs>
+  <radialGradient id="parch" cx="0.5" cy="0.45" r="0.85">
+    <stop offset="0"    stop-color="#F2E7CC"/>
+    <stop offset="0.5"  stop-color="#E5D4AC"/>
+    <stop offset="0.95" stop-color="#B89968"/>
+    <stop offset="1"    stop-color="#8E6F3D"/>
+  </radialGradient>
+
+  <radialGradient id="oxblood" cx="0.5" cy="0.45" r="0.85">
+    <stop offset="0"    stop-color="#5C2424"/>
+    <stop offset="0.5"  stop-color="#3D1414"/>
+    <stop offset="1"    stop-color="#1A0808"/>
+  </radialGradient>
+
+  <pattern id="paperGrain" patternUnits="userSpaceOnUse" width="9" height="9">
+    <circle cx="1.7" cy="2.1" r="0.22" fill="#7a5d2c" opacity="0.18"/>
+    <circle cx="5.4" cy="4.3" r="0.15" fill="#5e421a" opacity="0.20"/>
+    <circle cx="3.1" cy="6.7" r="0.18" fill="#9a7e4f" opacity="0.15"/>
+    <circle cx="7.2" cy="1.2" r="0.10" fill="#3f2810" opacity="0.25"/>
+    <circle cx="6.9" cy="7.8" r="0.13" fill="#7a5d2c" opacity="0.18"/>
+  </pattern>
+
+  <pattern id="oxbloodGrain" patternUnits="userSpaceOnUse" width="9" height="9">
+    <circle cx="1.7" cy="2.1" r="0.20" fill="#1a0606" opacity="0.5"/>
+    <circle cx="5.4" cy="4.3" r="0.14" fill="#000" opacity="0.4"/>
+    <circle cx="3.1" cy="6.7" r="0.16" fill="#7a1818" opacity="0.3"/>
+    <circle cx="7.2" cy="1.2" r="0.10" fill="#3a0a0a" opacity="0.4"/>
+  </pattern>
+
+  <!-- LOGO SYMBOL: archway + dot + threshold within a frame circle -->
+  <symbol id="logomark" viewBox="-30 -30 60 60">
+    <!-- outer ring -->
+    <circle cx="0" cy="0" r="26" fill="none" stroke="currentColor" stroke-width="0.7"/>
+    <circle cx="0" cy="0" r="24" fill="none" stroke="currentColor" stroke-width="0.3"/>
+    <!-- the dot above the arch (the moment of meaning) -->
+    <circle cx="0" cy="-13" r="1.5" fill="currentColor"/>
+    <!-- two small flanking dots (question + answer) -->
+    <circle cx="-7" cy="-10" r="0.8" fill="currentColor"/>
+    <circle cx="7"  cy="-10" r="0.8" fill="currentColor"/>
+    <!-- archway / threshold -->
+    <path d="M -9 12 L -9 -3 A 9 9 0 0 1 9 -3 L 9 12 Z"
+          fill="none" stroke="currentColor" stroke-width="0.9"/>
+    <path d="M -6 12 L -6 -2 A 6 6 0 0 1 6 -2 L 6 12"
+          fill="none" stroke="currentColor" stroke-width="0.5"/>
+    <!-- threshold base line (the "ground" being crossed) -->
+    <line x1="-13" y1="12" x2="13" y2="12"
+          stroke="currentColor" stroke-width="1.1"/>
+    <line x1="-13" y1="13.5" x2="13" y2="13.5"
+          stroke="currentColor" stroke-width="0.3"/>
+    <!-- compass-style tick marks on outer ring -->
+    <g stroke="currentColor" stroke-width="0.3">
+      <line x1="0"   y1="-24" x2="0"   y2="-26"/>
+      <line x1="0"   y1="24"  x2="0"   y2="26"/>
+      <line x1="-24" y1="0"   x2="-26" y2="0"/>
+      <line x1="24"  y1="0"   x2="26"  y2="0"/>
+    </g>
+    <!-- subtle dots at diagonals -->
+    <g fill="currentColor">
+      <circle cx="-17" cy="-17" r="0.45"/>
+      <circle cx="17"  cy="-17" r="0.45"/>
+      <circle cx="-17" cy="17"  r="0.45"/>
+      <circle cx="17"  cy="17"  r="0.45"/>
+    </g>
+  </symbol>
+
+  <!-- Corner ornament (small) -->
+  <symbol id="ornCorner" viewBox="0 0 16 16">
+    <g fill="none" stroke="currentColor" stroke-width="0.4" stroke-linecap="round">
+      <path d="M 1 6 L 1 1 L 6 1"/>
+      <path d="M 1.5 3.5 L 3.5 3.5 L 3.5 1.5" stroke-width="0.25"/>
+      <circle cx="2.2" cy="2.2" r="0.4" fill="currentColor"/>
+      <path d="M 3 5 Q 5 5 5 3" stroke-width="0.3"/>
+    </g>
+  </symbol>
+</defs>
+
+<!-- Full-bleed background -->
+<rect x="0" y="0" width="111" height="154" fill="url(#oxblood)"/>
+<rect x="0" y="0" width="111" height="154" fill="url(#oxbloodGrain)"/>
+<g color="#D9B978">
+<rect x="6" y="6" width="99" height="142" fill="none" stroke="#D9B978" stroke-width="0.4"/>
+<rect x="7.8" y="7.8" width="95.4" height="138.4" fill="none" stroke="#D9B978" stroke-width="0.2"/>
+<rect x="9.5" y="9.5" width="92.0" height="135.0" fill="none" stroke="#D9B978" stroke-width="0.12" stroke-dasharray="0.6 0.6"/>
+<use href="#ornCorner" x="8" y="8" width="8" height="8" transform="rotate(0 12 12)"/>
+<use href="#ornCorner" x="103" y="8" width="8" height="8" transform="rotate(90 107 12)"/>
+<use href="#ornCorner" x="103" y="146" width="8" height="8" transform="rotate(180 107 150)"/>
+<use href="#ornCorner" x="8" y="146" width="8" height="8" transform="rotate(270 12 150)"/>
+<circle cx="24.67" cy="71.14" r="0.2" fill="#D9B978" opacity="0.68"/>
+<circle cx="81.60" cy="81.28" r="0.15" fill="#D9B978" opacity="0.69"/>
+<circle cx="68.33" cy="38.58" r="0.2" fill="#D9B978" opacity="0.52"/>
+<circle cx="78.82" cy="38.50" r="0.2" fill="#D9B978" opacity="0.46"/>
+<circle cx="89.68" cy="60.11" r="0.18" fill="#D9B978" opacity="0.79"/>
+<circle cx="30.34" cy="136.29" r="0.28" fill="#D9B978" opacity="0.76"/>
+<circle cx="83.17" cy="32.85" r="0.15" fill="#D9B978" opacity="0.47"/>
+<circle cx="64.44" cy="31.19" r="0.2" fill="#D9B978" opacity="0.48"/>
+<circle cx="85.18" cy="130.79" r="0.2" fill="#D9B978" opacity="0.79"/>
+<circle cx="81.55" cy="131.90" r="0.18" fill="#D9B978" opacity="0.45"/>
+<circle cx="60.19" cy="137.91" r="0.2" fill="#D9B978" opacity="0.69"/>
+<circle cx="79.42" cy="77.92" r="0.28" fill="#D9B978" opacity="0.68"/>
+<circle cx="59.20" cy="134.64" r="0.18" fill="#D9B978" opacity="0.56"/>
+<circle cx="17.39" cy="25.17" r="0.28" fill="#D9B978" opacity="0.66"/>
+<circle cx="33.97" cy="122.16" r="0.18" fill="#D9B978" opacity="0.71"/>
+<circle cx="62.69" cy="31.13" r="0.28" fill="#D9B978" opacity="0.47"/>
+<circle cx="77.59" cy="103.80" r="0.15" fill="#D9B978" opacity="0.69"/>
+<circle cx="80.04" cy="127.23" r="0.28" fill="#D9B978" opacity="0.61"/>
+<circle cx="30.83" cy="116.56" r="0.28" fill="#D9B978" opacity="0.53"/>
+<circle cx="13.09" cy="26.82" r="0.2" fill="#D9B978" opacity="0.73"/>
+<circle cx="22.36" cy="89.44" r="0.15" fill="#D9B978" opacity="0.56"/>
+<circle cx="93.47" cy="64.08" r="0.2" fill="#D9B978" opacity="0.65"/>
+<circle cx="26.02" cy="115.84" r="0.15" fill="#D9B978" opacity="0.80"/>
+<circle cx="93.26" cy="32.47" r="0.15" fill="#D9B978" opacity="0.46"/>
+<circle cx="67.80" cy="27.99" r="0.15" fill="#D9B978" opacity="0.68"/>
+<circle cx="75.79" cy="16.79" r="0.18" fill="#D9B978" opacity="0.59"/>
+<circle cx="28.90" cy="87.37" r="0.28" fill="#D9B978" opacity="0.57"/>
+<circle cx="83.90" cy="119.69" r="0.15" fill="#D9B978" opacity="0.77"/>
+<circle cx="64.02" cy="139.50" r="0.18" fill="#D9B978" opacity="0.74"/>
+<circle cx="85.23" cy="24.34" r="0.2" fill="#D9B978" opacity="0.80"/>
+<circle cx="93.49" cy="140.98" r="0.28" fill="#D9B978" opacity="0.49"/>
+<use href="#logomark" x="30.5" y="44.0" width="50" height="50"/>
+
+  <text x="55.5" y="100.0" text-anchor="middle"
+        font-family="'Cinzel', 'IM Fell English', serif" font-size="5.4"
+        letter-spacing="3" fill="#D9B978" font-weight="500">OUT OF CONTEXT</text>
+  <line x1="33.5" y1="103.0" x2="52.5" y2="103.0"
+        stroke="#D9B978" stroke-width="0.25"/>
+  <line x1="58.5" y1="103.0" x2="77.5" y2="103.0"
+        stroke="#D9B978" stroke-width="0.25"/>
+  <circle cx="55.5" cy="103.0" r="0.6" fill="#D9B978"/>
+
+
+  <text x="55.5" y="111.0" text-anchor="middle"
+        font-family="'Cormorant Garamond', 'IM Fell English', serif"
+        font-style="italic" font-size="6" fill="#E8C77A">
+    the reply
+  </text>
+
+
+  <text x="55.5" y="144.5" text-anchor="middle"
+        font-family="'Cormorant Garamond', serif" font-size="2.2"
+        letter-spacing="2" fill="#A8884C">
+    AC · Y2 · MMXXVI
+  </text>
+
+</g></svg>
