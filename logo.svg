@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="90mm" height="90mm" viewBox="0 0 90 90">
+
+<defs>
+  <radialGradient id="parch" cx="0.5" cy="0.45" r="0.85">
+    <stop offset="0"    stop-color="#F2E7CC"/>
+    <stop offset="0.5"  stop-color="#E5D4AC"/>
+    <stop offset="0.95" stop-color="#B89968"/>
+    <stop offset="1"    stop-color="#8E6F3D"/>
+  </radialGradient>
+
+  <radialGradient id="oxblood" cx="0.5" cy="0.45" r="0.85">
+    <stop offset="0"    stop-color="#5C2424"/>
+    <stop offset="0.5"  stop-color="#3D1414"/>
+    <stop offset="1"    stop-color="#1A0808"/>
+  </radialGradient>
+
+  <pattern id="paperGrain" patternUnits="userSpaceOnUse" width="9" height="9">
+    <circle cx="1.7" cy="2.1" r="0.22" fill="#7a5d2c" opacity="0.18"/>
+    <circle cx="5.4" cy="4.3" r="0.15" fill="#5e421a" opacity="0.20"/>
+    <circle cx="3.1" cy="6.7" r="0.18" fill="#9a7e4f" opacity="0.15"/>
+    <circle cx="7.2" cy="1.2" r="0.10" fill="#3f2810" opacity="0.25"/>
+    <circle cx="6.9" cy="7.8" r="0.13" fill="#7a5d2c" opacity="0.18"/>
+  </pattern>
+
+  <pattern id="oxbloodGrain" patternUnits="userSpaceOnUse" width="9" height="9">
+    <circle cx="1.7" cy="2.1" r="0.20" fill="#1a0606" opacity="0.5"/>
+    <circle cx="5.4" cy="4.3" r="0.14" fill="#000" opacity="0.4"/>
+    <circle cx="3.1" cy="6.7" r="0.16" fill="#7a1818" opacity="0.3"/>
+    <circle cx="7.2" cy="1.2" r="0.10" fill="#3a0a0a" opacity="0.4"/>
+  </pattern>
+
+  <!-- LOGO SYMBOL: archway + dot + threshold within a frame circle -->
+  <symbol id="logomark" viewBox="-30 -30 60 60">
+    <!-- outer ring -->
+    <circle cx="0" cy="0" r="26" fill="none" stroke="currentColor" stroke-width="0.7"/>
+    <circle cx="0" cy="0" r="24" fill="none" stroke="currentColor" stroke-width="0.3"/>
+    <!-- the dot above the arch (the moment of meaning) -->
+    <circle cx="0" cy="-13" r="1.5" fill="currentColor"/>
+    <!-- two small flanking dots (question + answer) -->
+    <circle cx="-7" cy="-10" r="0.8" fill="currentColor"/>
+    <circle cx="7"  cy="-10" r="0.8" fill="currentColor"/>
+    <!-- archway / threshold -->
+    <path d="M -9 12 L -9 -3 A 9 9 0 0 1 9 -3 L 9 12 Z"
+          fill="none" stroke="currentColor" stroke-width="0.9"/>
+    <path d="M -6 12 L -6 -2 A 6 6 0 0 1 6 -2 L 6 12"
+          fill="none" stroke="currentColor" stroke-width="0.5"/>
+    <!-- threshold base line (the "ground" being crossed) -->
+    <line x1="-13" y1="12" x2="13" y2="12"
+          stroke="currentColor" stroke-width="1.1"/>
+    <line x1="-13" y1="13.5" x2="13" y2="13.5"
+          stroke="currentColor" stroke-width="0.3"/>
+    <!-- compass-style tick marks on outer ring -->
+    <g stroke="currentColor" stroke-width="0.3">
+      <line x1="0"   y1="-24" x2="0"   y2="-26"/>
+      <line x1="0"   y1="24"  x2="0"   y2="26"/>
+      <line x1="-24" y1="0"   x2="-26" y2="0"/>
+      <line x1="24"  y1="0"   x2="26"  y2="0"/>
+    </g>
+    <!-- subtle dots at diagonals -->
+    <g fill="currentColor">
+      <circle cx="-17" cy="-17" r="0.45"/>
+      <circle cx="17"  cy="-17" r="0.45"/>
+      <circle cx="-17" cy="17"  r="0.45"/>
+      <circle cx="17"  cy="17"  r="0.45"/>
+    </g>
+  </symbol>
+
+  <!-- Corner ornament (small) -->
+  <symbol id="ornCorner" viewBox="0 0 16 16">
+    <g fill="none" stroke="currentColor" stroke-width="0.4" stroke-linecap="round">
+      <path d="M 1 6 L 1 1 L 6 1"/>
+      <path d="M 1.5 3.5 L 3.5 3.5 L 3.5 1.5" stroke-width="0.25"/>
+      <circle cx="2.2" cy="2.2" r="0.4" fill="currentColor"/>
+      <path d="M 3 5 Q 5 5 5 3" stroke-width="0.3"/>
+    </g>
+  </symbol>
+</defs>
+
+<rect width="90" height="90" fill="transparent"/>
+<g color="#2A1408">
+  <use href="#logomark" x="20.0" y="6" width="50" height="50"/>
+  <text x="45.0" y="68" text-anchor="middle"
+        font-family="'Cinzel', 'IM Fell English', serif"
+        font-size="6.5" letter-spacing="2.8" fill="#2A1408" font-weight="500">OUT OF CONTEXT</text>
+  <line x1="23.0" y1="73" x2="42.0" y2="73" stroke="#2A1408" stroke-width="0.25"/>
+  <line x1="48.0" y1="73" x2="67.0" y2="73" stroke="#2A1408" stroke-width="0.25"/>
+  <circle cx="45.0" cy="73" r="0.6" fill="#2A1408"/>
+  <text x="45.0" y="80" text-anchor="middle"
+        font-family="'Cormorant Garamond', serif" font-style="italic"
+        font-size="3.4" fill="#3A1F0F">an artist book by Kipras Tinfavičius</text>
+</g>
+</svg>
