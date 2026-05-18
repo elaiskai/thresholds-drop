@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60mm" height="60mm" viewBox="0 0 60 60">
+
+<defs>
+  <style>
+    .cut    { fill: none; stroke: #000; stroke-width: 0.35; }
+    .fold   { fill: none; stroke: #C8262E; stroke-width: 0.3; stroke-dasharray: 3 1.5; }
+    .glue   { fill: none; stroke: #1C4B82; stroke-width: 0.3; stroke-dasharray: 1.5 1.5; }
+    .bleed  { fill: none; stroke: #888; stroke-width: 0.2; stroke-dasharray: 1 1; }
+    .reg    { fill: none; stroke: #000; stroke-width: 0.25; }
+    .annot  { font-family: 'Manrope', 'Inter', 'Helvetica Neue', sans-serif; font-size: 2.6px; fill: #444; }
+    .h1     { font-family: 'Manrope', 'Inter', 'Helvetica Neue', sans-serif; font-weight: 700; }
+    .h2     { font-family: 'Manrope', 'Inter', 'Helvetica Neue', sans-serif; font-weight: 500; }
+    .body   { font-family: 'Manrope', 'Inter', 'Helvetica Neue', sans-serif; font-weight: 400; }
+    .body-it{ font-family: 'Manrope', 'Inter', 'Helvetica Neue', sans-serif; font-weight: 400; font-style: italic; }
+    .mono   { font-family: 'JetBrains Mono', 'IBM Plex Mono', monospace; }
+  </style>
+
+  <!-- the brand mark: two L-corner brackets implying a frame -->
+  <symbol id="logoMain" viewBox="0 0 60 60">
+    <!-- top-left L bracket -->
+    <path d="M 6 22 L 6 6 L 22 6"
+          fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="square"/>
+    <!-- bottom-right L bracket -->
+    <path d="M 54 38 L 54 54 L 38 54"
+          fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="square"/>
+    <!-- single dot offset center — the displaced thing -->
+    <circle cx="36" cy="26" r="1.3" fill="currentColor"/>
+  </symbol>
+
+  <!-- card mark: just the top-left bracket (the opening) -->
+  <symbol id="logoQuestion" viewBox="0 0 32 32">
+    <path d="M 4 22 L 4 4 L 22 4"
+          fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="square"/>
+    <circle cx="14" cy="14" r="1.1" fill="currentColor"/>
+  </symbol>
+
+  <!-- card mark: just the bottom-right bracket (the closing) -->
+  <symbol id="logoAnswer" viewBox="0 0 32 32">
+    <path d="M 28 10 L 28 28 L 10 28"
+          fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="square"/>
+    <circle cx="18" cy="18" r="1.1" fill="currentColor"/>
+  </symbol>
+</defs>
+
+<rect width="60" height="60" fill="#FFFFFF"/>
+<g color="#1A1A1A">
+  <use href="#logoQuestion" x="14.0" y="10" width="32" height="32"/>
+</g>
+<text class="h2" x="30.0" y="50" text-anchor="middle"
+      font-size="5" letter-spacing="-0.1" fill="#1A1A1A">the question</text>
+<text class="mono" x="30.0" y="55" text-anchor="middle"
+      font-size="2.2" letter-spacing="2" fill="#5A5450">— opening —</text>
+</svg>
